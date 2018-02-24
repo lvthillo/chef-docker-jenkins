@@ -25,7 +25,7 @@ docker_container 'jenkins' do
   repo 'jenkinsci/jenkins'
   tag 'lts'
   action :run
-  port '8080'
+  port '8080:8080'
   volumes 'jenkins-data:/var/jenkins_home/'
 end
 
